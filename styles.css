@@ -1,0 +1,38 @@
+body{
+    padding: 2% 5% 2% 5%;
+}
+.head p{
+    text-align: center;
+}
+
+.box{
+    margin: 0px auto 0px auto;
+    width: 325px;
+}
+
+.box_divs{
+    border: 1px solid;
+    padding: 1em;
+    margin: 1px;
+}
+
+.box_divs .content{
+    font-size: 0.6rem;
+}
+
+.right{
+    float: right;
+    text-align: right;
+}
+
+.button .discountbutton{
+    font-size: 0.6rem;
+    text-align: center;
+    position: relative;
+    padding-inline-start: 30%;
+}
+
+.discountoffer{
+    font-size: 0.6rem;
+    padding-left: 5px;
+}
