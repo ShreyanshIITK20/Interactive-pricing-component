@@ -22,23 +22,27 @@
 </head>
 <body>
   <div class="head">
-    <p>Simple, traffic-based pricing</p>
-    <p>Sign-up for our 30-day trial. No credit card required.</p>
+    <p style="font-weight: 800;margin-bottom: 5px;">Simple, traffic-based pricing</p>
+    <p style="font-size: 8px;">Sign-up for our 30-day trial. No credit card required.</p>
   </div>
   
   <div class="box">
-    <div class="box_divs">
-      <div>
-        <span class="left pageviews">
-          <span class="page_val">100K</span> PAGEVIEWS
-        </span>
-        <span class="right payment">
-          $<span class="pricing">16.00</span> /month
-        </span>
-      </div>
-      <div class="sliderbar" style="padding: 10px 0px 0px 0px;">
-        <input id="slider" type="range" id="slider" name="slider" 
-         min="1" max="5" value="3" step="1" style="width: 100%;" oninput="slideFunction(this.value)">
+    <div class="box_divs div1">
+      <div class="wrapper">
+
+        <div class="left pageviews">
+          <span class="page_val">100K</span> &nbsp;PAGEVIEWS
+        </div>
+
+        <div class="right payment">
+          $<span class="pricing">16.00</span> <span class="month">/month</span>
+        </div>
+
+        <div class="sliderbar">
+          <input id="slider" type="range" class="sliding" name="slider" 
+           min="1" max="5" value="3" step="1" style="width: 100%;" oninput="slideFunction(this.value)">
+        </div>
+
       </div>
       <div class="button">
         <span class="discountbutton">
@@ -55,14 +59,14 @@
       
     </div>
 
-    <div class="box_divs">
+    <div class="box_divs div2">
       <div class="row">
-        <div class="content col-sm-6 left">
+        <div class="content col-md-6 left">
           <p>Unlimited websites</p>
           <p>100% data ownership</p>
           <p>Email reports</p>
         </div>
-        <div class="content col-sm-6 right">
+        <div class="content col-md-6 right">
           Start my trial
         </div>
       </div>

@@ -33,6 +33,7 @@ function slideFunction(val){
     $('.pricing').html(netVal(val).price)
 }
 
+
 function toggle(){
     checked = !checked
     if(checked) $('.pricing').html((($('.pricing').html())*0.75).toFixed(2))

@@ -1,19 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
 body{
-    padding: 2% 5% 2% 5%;
+    padding: 10vh 5% 20vh 5%;
+    font-family: 'Manrope';
+    background-color: hsl(230, 100%, 99%);
 }
-.head p{
+.head{
     text-align: center;
+    font-size: 1rem;
+    margin: 45px auto 65px auto;
+    width: 300px;
 }
 
 .box{
     margin: 0px auto 0px auto;
     width: 325px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.5rem rgb(199, 196, 196));
 }
 
 .box_divs{
-    border: 1px solid;
+    background-color:  white;
+    border-radius: 10px;
     padding: 1em;
     margin: 1px;
+    
+}
+.div2{
+    border-top-left-radius:0px ;
+    border-top-right-radius: 0px;
+}
+.div1{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sliderbar{
+    padding: 10px 0px 0px 0px;
+    grid-column: 1/3;
+    grid-row: 2;
 }
 
 .box_divs .content{
@@ -29,7 +59,7 @@ body{
     font-size: 0.6rem;
     text-align: center;
     position: relative;
-    padding-inline-start: 24%;
+    padding-inline-start: 21%;
 }
 
 .discountoffer{
@@ -46,4 +76,51 @@ body{
 
 .toggle_switch input{
     float: none;
+}
+
+.pageviews,.discountbutton,.div2 .left{
+    color: hsl(225, 20%, 60%);
+}
+.pageviews{
+    font-size: 10px;
+    font-weight: 800;
+    display: flex;
+    align-items:center;
+    letter-spacing: 1px;
+}
+.payment{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.month{
+    color: hsl(225, 20%, 60%);
+    font-size: 10px;
+}
+.sliding{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    background: hsl(224, 65%, 95%);
+    border-radius: 15px;
+    outline: none;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width:720px) {
+    .box_divs .content,.wrapper div{
+        text-align: center;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .sliderbar{
+        grid-row: 2;
+        padding-bottom: 10px;
+    }
+    .payment{
+        grid-row: 3;
+    }
 }
