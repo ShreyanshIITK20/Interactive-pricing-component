@@ -29,10 +29,21 @@ body{
     font-size: 0.6rem;
     text-align: center;
     position: relative;
-    padding-inline-start: 30%;
+    padding-inline-start: 24%;
 }
 
 .discountoffer{
     font-size: 0.6rem;
     padding-left: 5px;
+}
+
+.toggle_switch{
+    padding: 0px;
+    margin: 0px;
+    padding-left: 28px;
+    min-height: 0px;
+}
+
+.toggle_switch input{
+    float: none;
 }

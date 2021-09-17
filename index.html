@@ -16,6 +16,8 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,16 +30,22 @@
     <div class="box_divs">
       <div>
         <span class="left pageviews">
-          Pageviews
+          <span class="page_val">100K</span> PAGEVIEWS
         </span>
         <span class="right payment">
-          $ /month
+          <span class="pricing">$16.00</span> /month
         </span>
       </div>
-      
+      <div class="sliderbar" style="padding: 10px 0px 0px 0px;">
+        <input id="slider" type="range" id="slider" name="slider" 
+         min="1" max="5" value="3" step="1" style="width: 100%;" oninput="slideFunction(this.value)">
+      </div>
       <div class="button">
         <span class="discountbutton">
           Monthly Billing
+          <span class="toggle_switch form-check form-switch form-check-inline">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          </span>
           Yearly Billing
         </span>
         <span class="discountoffer">
@@ -68,5 +76,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
