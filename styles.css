@@ -4,9 +4,13 @@ body{
     padding: 10vh 5% 20vh 5%;
     font-family: 'Manrope';
     background-color: hsl(230, 100%, 99%);
-    background-image: url('./images/bg-pattern.svg');
-    background-repeat: no-repeat;
-    background-size:contain;
+}
+.bgimage{
+    margin: -10vh -5% -20vh;
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    z-index: -100;
 }
 .head{
     text-align: center;
