@@ -11,8 +11,18 @@ body{
 .head{
     text-align: center;
     font-size: 1rem;
-    margin: 45px auto 65px auto;
+    margin: 0px auto 15px auto;
     width: 300px;
+    height: 100px;
+    background-image: url('./images/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    overflow: auto;
+    background-position-x: center;
+}
+.headcontent{
+    position: relative;
+    transform: translateY(75%);
 }
 
 .box{
