@@ -28,10 +28,19 @@ function netVal (value){
     return payment;
 }
 
-function slideFunction(val){
-    $('.page_val').html(netVal(val).pageview)
-    $('.pricing').html(netVal(val).price)
+// function slideFunction(val){
+//     $('.page_val').html(netVal(val).pageview)
+//     $('.pricing').html(netVal(val).price)
+// }
+
+document.getElementById("slider").oninput = function(){
+    $('.page_val').html(netVal(this.value).pageview)
+    $('.pricing').html(netVal(this.value).price)
+
+    var value = (this.value-this.min)/(this.max-this.min)*100
+    this.style.background = 'linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ' + value + '%, hsl(224, 65%, 95%) ' + value + '%, hsl(224, 65%, 95%) 100%)'
 }
+
 
 
 function toggle(){
