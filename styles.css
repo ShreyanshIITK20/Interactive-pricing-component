@@ -4,7 +4,7 @@ body{
     padding: 10vh 5% 20vh 5%;
     font-family: 'Manrope';
     background-color: hsl(230, 100%, 99%);
-    background-image: url('/images/bg-pattern.svg');
+    background-image: url('./images/bg-pattern.svg');
     background-repeat: no-repeat;
     background-size:contain;
 }
@@ -205,5 +205,8 @@ body{
     }
     .payment{
         grid-row: 3;
+    }
+    .div2 button{
+        margin-bottom: 20px;
     }
 }
